@@ -1,0 +1,30 @@
+qs 1
+  #include <stdio.h>
+#include <math.h>
+
+int main() {
+    double a, b, c;
+    double discriminant, root1, root2;
+
+    
+    scanf("%lf %lf %lf", &a, &b, &c);
+
+    discriminant = b * b - 4 * a * c;
+
+    if (discriminant > 0) {
+        
+        root1 = (-b + sqrt(discrimi
+qs2
+                           #include <stdio.h>
+
+int main() {
+  
+    
+    scanf("%d", &percent);
+
+   
+    if (percent >= 90 && percent <= 100) {
+        printf("Grade A\n");
+    } 
+    else if (percent >= 80 && percent <= 89) {
+        printf("Grade B\n");
