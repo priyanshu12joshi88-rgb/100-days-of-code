@@ -1,0 +1,21 @@
+QS1
+  #include <stdio.h>
+
+
+int main() {
+    double principal, rate, time;
+    double SI, CI;
+
+    
+    scanf("%lf %lf %lf", &principal, &rate, &time);
+
+    
+    SI = (principal * rate * time) / 100.0;
+
+    CI = principal * pow((1 + rate / 100.0), time) - principal;
+
+   
+    printf("Simple Interest=%.2lf, Compound Interest=%.2lf\n", SI, CI);
+
+    return 0;
+}
