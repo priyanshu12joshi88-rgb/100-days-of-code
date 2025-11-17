@@ -1,0 +1,19 @@
+qs 1
+
+
+nums = list(map(int, input().split()))
+target = int(input())
+
+
+seen = {}
+
+result = [-1, -1]
+
+for i, val in enumerate(nums):
+    complement = target - val
+    if complement in seen:
+        result = [seen[complement], i]
+        break
+    seen[val] = i
+
+print(result[0], result[1])
