@@ -1,0 +1,25 @@
+QS1
+
+
+s = input().strip()
+t = input().strip()
+
+
+if len(s) != len(t):
+    print("Not Anagram")
+else:
+  ri 
+    freq_s = {}
+    freq_t = {}
+
+    for ch in s:
+        freq_s[ch] = freq_s.get(ch, 0) + 1
+
+    for ch in t:
+        freq_t[ch] = freq_t.get(ch, 0) + 1
+
+   
+    if freq_s == freq_t:
+        print("Anagram")
+    else:
+        print("Not Anagram")
